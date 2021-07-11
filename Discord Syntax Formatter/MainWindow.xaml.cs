@@ -31,7 +31,7 @@ namespace Discord_Syntax_Formatter
         {
             lblCopySuccess.Visibility = Visibility.Hidden;
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
@@ -47,10 +47,41 @@ namespace Discord_Syntax_Formatter
                 throw;
             }
         }
-
-        private void btnConvert_Click(object sender, RoutedEventArgs e)
+        private void btnConvert_Click_1(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string unformatted = txtMessage.Text;
 
+
+
+                string lang = "";
+
+                if (cbCSharp.IsSelected == true)
+                {
+                    lang = "cs";
+                }
+                else if (cbCSS.IsSelected == true)
+                {
+                    lang = "css";
+                }
+                else if (cbIni.IsSelected == true)
+                {
+                    lang = "ini";
+                }
+                else if (cbJSON.IsSelected == true)
+                {
+                    lang = "json";
+                }
+
+                string formatted = "```" + lang + "\r\n" + unformatted + "\r\n" + "```";
+
+                txtMessage.Text = formatted.ToString(); ;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnCopy_Click(object sender, RoutedEventArgs e)
@@ -63,18 +94,29 @@ namespace Discord_Syntax_Formatter
             dispatcherTimer.Start();
         }
 
-        private void btnConvert_Click_1(object sender, RoutedEventArgs e)
+        private void cbToggleResize_Checked(object sender, RoutedEventArgs e)
         {
             try
             {
-                string unformatted = txtMessage.Text;
-                string formatted = "```cs" + "\r\n" + unformatted + "\r\n" + "```";
-
-                txtMessage.Text = formatted.ToString(); ;
+                ResizeMode = ResizeMode.CanResize;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Exception Thrown: " + ex.Message);
+                throw;
+            }
+        }
+
+        private void cbToggleResize_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ResizeMode = ResizeMode.NoResize;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception Thrown: " + ex.Message);
+                throw;
             }
         }
     }

@@ -12,3 +12,4 @@ C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Format
 C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Release\Discord Syntax Formatter.csproj.CoreCompileInputs.cache
 C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Release\Discord Syntax Formatter.exe
 C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Release\Discord Syntax Formatter.pdb
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Release\Discord Syntax Formatter.csproj.AssemblyReference.cache
