@@ -29,9 +29,17 @@ namespace Discord_Syntax_Formatter
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            lblCopySuccess.Visibility = Visibility.Hidden;
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
+            try
+            {
+                lblCopySuccess.Visibility = Visibility.Hidden;
+                dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+                dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                throw;
+            }
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
@@ -52,9 +60,6 @@ namespace Discord_Syntax_Formatter
             try
             {
                 string unformatted = txtMessage.Text;
-
-
-
                 string lang = "";
 
                 if (cbCSharp.IsSelected == true)
@@ -86,12 +91,20 @@ namespace Discord_Syntax_Formatter
 
         private void btnCopy_Click(object sender, RoutedEventArgs e)
         {
-            // Copy text to clipboard
-            Clipboard.SetText(txtMessage.Text);
+            try
+            {
+                // Copy text to clipboard
+                Clipboard.SetText(txtMessage.Text);
 
-            // Start timer to get rid of success message
-            lblCopySuccess.Visibility = Visibility.Visible;
-            dispatcherTimer.Start();
+                // Start timer to get rid of success message
+                lblCopySuccess.Visibility = Visibility.Visible;
+                dispatcherTimer.Start();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                throw;
+            }
         }
     }
 }
