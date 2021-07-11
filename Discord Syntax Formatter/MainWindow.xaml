@@ -37,8 +37,6 @@
             <TextBox x:Name="txtMessage" VerticalScrollBarVisibility="Auto" FontSize="14" TextWrapping="WrapWithOverflow" 
                  AcceptsReturn="True" BorderThickness="4" Padding="4" Grid.Row="3" />
 
-            <CheckBox Name="cbToggleResize" Content="Toggle resize" Grid.Row="1" VerticalAlignment="Center" Checked="cbToggleResize_Checked" Unchecked="cbToggleResize_Unchecked" />
-
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="top" >
                 <TextBlock Text="Message copied to clipboard." 
                    Name="lblCopySuccess" VerticalAlignment="Center" Margin="0 0 10 0" />

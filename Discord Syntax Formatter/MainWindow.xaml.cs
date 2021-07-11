@@ -93,31 +93,5 @@ namespace Discord_Syntax_Formatter
             lblCopySuccess.Visibility = Visibility.Visible;
             dispatcherTimer.Start();
         }
-
-        private void cbToggleResize_Checked(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                ResizeMode = ResizeMode.CanResize;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Exception Thrown: " + ex.Message);
-                throw;
-            }
-        }
-
-        private void cbToggleResize_Unchecked(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                ResizeMode = ResizeMode.NoResize;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Exception Thrown: " + ex.Message);
-                throw;
-            }
-        }
     }
 }
