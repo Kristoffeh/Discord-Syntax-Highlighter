@@ -1,0 +1,15 @@
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\bin\Debug\Discord Syntax Formatter.exe.config
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\bin\Debug\Discord Syntax Formatter.exe
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\bin\Debug\Discord Syntax Formatter.pdb
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter.csproj.AssemblyReference.cache
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\MainWindow.g.cs
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\App.g.cs
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter_MarkupCompile.cache
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter_MarkupCompile.lref
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\MainWindow.baml
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter.g.resources
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord_Syntax_Formatter.Properties.Resources.resources
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter.csproj.GenerateResource.cache
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter.csproj.CoreCompileInputs.cache
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter.exe
+C:\Users\kriss\Documents\GitHub\Discord-Syntax-Highlighter\Discord Syntax Formatter\obj\Debug\Discord Syntax Formatter.pdb
