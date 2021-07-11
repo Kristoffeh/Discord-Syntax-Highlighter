@@ -79,9 +79,22 @@ namespace Discord_Syntax_Formatter
                     lang = "json";
                 }
 
-                string formatted = "```" + lang + "\r\n" + unformatted + "\r\n" + "```";
+                string semi = "```" + lang;
 
-                txtMessage.Text = formatted.ToString(); ;
+                string[] stringArray = { "cs", "css", "ini", "json" };
+
+                if (unformatted.Contains("cs"))
+                {
+                    unformatted.Remove(unformatted.Length - 3);
+
+                    string formatted = semi + "\r\n" + unformatted + "\r\n" + "```";
+                }
+                else
+                {
+                    string formatted = semi + "\r\n" + unformatted + "\r\n" + "```";
+                }
+
+                
             }
             catch (Exception ex)
             {
